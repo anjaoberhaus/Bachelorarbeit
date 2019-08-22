@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wärmeinseleffekt Münster</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Animated temperature measurements">
+    <meta name="keywords" content="urban heat island, measurements, muenster">
+    <meta name="author" content="Anja Oberhaus">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700" rel="stylesheet">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body>
+    <div id="controls">
+        <div id="projectDescription">
+            <p><b>Visualisierung des Wärmeinseleffektes in Münster</b>
+                <br>Mit Hilfe der <a href="https://sensebox.de/" target="_empty">senseBox</a> wurden Temperaturmessungen in Münsteraner Innen- und Außenstadtbezirken unternommen.
+                <br>
+                <small>Quellcode der Animation angelehnt an <a href="https://github.com/joeyklee/meteobike-animation">Joey K. Lee</a> </small>
+            </p>
+        </div>
+        <div id="campaignSelector">
+            <select id="campaign">
+                <option value="Testroute3-2019-07-16_1">16. Juli 2019 17:57</option>
+                <option value="Testroute3-2019-07-16_2">16. Juli 2019 21:30</option>
+                <option value="Testroute3-2019-07-17_1">17. Juli 2019 7:57</option>
+                <option value="Testroute">17. Juli 2019 19:57</option>
+                <option value="2019-08-06" selected>06. August 2019 19:00</option>
+            </select>
+        </div>
+        <div id="variableSelector">
+            <select id="variables">
+                <option value="Temperature_diff_K" selected>Temperaturdifferenz (°C)</option>
+            </select>
+        </div>
+        <div id="legend"></div>
+
+        <div class="playback">
+            <div id="start" class="btn">
+                <p>&#x25BA;</p>
+            </div>
+            <div id="stop" class="btn">
+                <p>&#9612;&#9612;</p>
+            </div>
+            <div class='session' id='sliderbar'>
+                <input id='slider' class='row' type='range' min='0' max='0' step='1' value='0' />
+                <p>
+                    <label id='active-time'></label>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="mapContainer"></div>
+    <!-- Scripts -->
+    <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+    <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+    <script src="https://d3js.org/d3-array.v1.min.js"></script>
+    <script src="https://d3js.org/d3-collection.v1.min.js"></script>
+    <script src="https://d3js.org/d3-color.v1.min.js"></script>
+    <script src="https://d3js.org/d3-format.v1.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+    <script src="https://d3js.org/d3-time.v1.min.js"></script>
+    <script src="https://d3js.org/d3-time-format.v2.min.js"></script>
+    <script src="https://d3js.org/d3-scale.v2.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
