@@ -43,25 +43,6 @@ window.onload = (function() {
             legend = document.querySelector("#legend");
 
             // set start and end time
-
-            /*if (selectedCampaign === 'Testroute1-2019-07-16_1') {
-                startTime = Date.parse('2019-07-16T15:57:00.000Z');
-                endTime = Date.parse('2019-07-16T16:04:06.000Z');
-            }
-            if (selectedCampaign === 'Testroute2-2019-07-16_2') {
-                startTime = Date.parse('2019-07-16T19:30:03.000Z');
-                endTime = Date.parse('2019-07-16T19:38:01.000Z');
-            }
-            if (selectedCampaign === 'Testroute3-2019-07-17_1') {
-                startTime = Date.parse('2019-07-17T05:57:00.000Z');
-                endTime = Date.parse('2019-07-17T06:16:50.000Z');
-            }*/
-            /*startTime = Date.parse('2019-07-16T15:57:00.000Z');
-            endTime = Date.parse('2019-07-16T16:04:06.000Z');*/
-            /* startTime = Date.parse('2019-07-16T19:30:03.000Z');
-            endTime = Date.parse('2019-07-16T19:38:01.000Z');*/
-            /*startTime = Date.parse('2019-07-17T05:57:00.000Z');
-            endTime = Date.parse('2019-07-17T06:16:50.000Z');*/
             startTime = Date.parse('2019-08-06T17:00:00.000Z');
             endTime = Date.parse('2019-08-06T18:00:00.000Z');
 
@@ -165,23 +146,7 @@ window.onload = (function() {
             campaignSelector.addEventListener("change", (e) => {
                 selectedCampaign = e.target.value;
                 console.log(selectedCampaign)
-
-                if (selectedCampaign === 'Testroute1-2019-07-16_1') {
-                    startTime = Date.parse('2019-07-16T15:57:00.000Z');
-                    endTime = Date.parse('2019-07-16T16:04:06.000Z');
-                }
-                if (selectedCampaign === 'Testroute2-2019-07-16_2') {
-                    startTime = Date.parse('2019-07-16T19:30:03.000Z');
-                    endTime = Date.parse('2019-07-16T19:38:01.000Z');
-                }
-                if (selectedCampaign === 'Testroute3-2019-07-17_1') {
-                    startTime = Date.parse('2019-07-17T05:57:00.000Z');
-                    endTime = Date.parse('2019-07-17T06:16:50.000Z');
-                }
-                if (selectedCampaign === 'Testroute') {
-                    startTime = Date.parse('2019-07-17T17:57:00.000Z');
-                    endTime = Date.parse('2019-07-17T18:21:50.000Z');
-                }
+                
                 if (selectedCampaign === '2019-08-06') {
                     startTime = Date.parse('2019-08-06T17:00:00.000Z');
                     endTime = Date.parse('2019-08-06T18:00:00.000Z');
