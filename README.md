@@ -13,7 +13,7 @@ Nach der Fertigstellung des Codes musste er lediglich als bin-Datei kompiliert w
 
 ## Animation
 
-Für die Animation des Wärmeinseleffektes in Form von Linien auf einer Karte wurde der [Code von Joey K. Lee](https://github.com/joeyklee/meteobike-animation), der für die Visualisierung des [Meteobike-Projektes](https://github.com/achristen/Meteobike) programmiert wurde, als Vorlage genommen. Dieser besteht aus einer HTML-, einer JavaScript-, einer CSS- und einer CSV-Datei, die im folgenden näher erläutert werden.
+Für die [Animation des Wärmeinseleffektes](https://anjaoberhaus.github.io/Bachelorarbeit/Animation) in Form von Linien auf einer Karte wurde der [Code von Joey K. Lee](https://github.com/joeyklee/meteobike-animation), der für die Visualisierung des [Meteobike-Projektes](https://github.com/achristen/Meteobike) programmiert wurde, als Vorlage genommen. Dieser besteht aus einer HTML-, einer JavaScript-, einer CSS- und einer CSV-Datei, die im folgenden näher erläutert werden.
 
 ### HTML-Datei
 
