@@ -4,7 +4,7 @@ In diesem GitHub-Repository befinden sich alle Quellcodes und Messdaten, die im 
 
 ## Code für die senseBox zum Speichern auf SD-Karte (Arduino)
 
-Der Code für die senseBox wurde zunächst über [Blockly](https://blockly.sensebox.de/ardublockly/?lang=de&board=sensebox-mcu) zum Speichern der Messdaten auf der SD-Karte programmiert. Da es über Blockly allerdings nicht möglich ist, die GPS-Daten mit mehr als zwei Nachkommastellen abzuspeichern, wurde der Programmcode mit Arudino an zwei Stellen verändert. Der fertige Programmcode sieht [so](https://github.com/anjaoberhaus/Bachelorarbeit/blob/master/Messung_auf_SD.ino) aus. Für mehr Nachkommastellen wurden in den Zeilen 61 und 62 lediglich ein Komma und eine 5 in den Klammern wie folgt ergänzt:
+Der Code für die senseBox wurde zunächst über [Blockly](https://blockly.sensebox.de/ardublockly/?lang=de&board=sensebox-mcu) zum Speichern der Messdaten auf der SD-Karte programmiert. Da es über Blockly allerdings nicht möglich ist, die GPS-Daten mit mehr als zwei Nachkommastellen abzuspeichern, wurde der Programmcode mit Arudino an zwei Stellen verändert. Der fertige Programmcode sieht [so](https://github.com/anjaoberhaus/Bachelorarbeit/blob/master/senseBox/Messung_auf_SD.ino) aus. Für mehr Nachkommastellen wurden in den Zeilen 61 und 62 lediglich ein Komma und eine 5 in den Klammern wie folgt ergänzt:
 
     dataFile19_08_06.println(gps.getLatitude(),5);
     dataFile19_08_06.println(gps.getLongitude(),5);
