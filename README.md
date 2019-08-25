@@ -1,2 +1,2 @@
-# Bachelorarbeit
-Visualisierung des Wärmeinseleffektes in Münster
+# Visualisierung des Wärmeinseleffektes in Münster
+
